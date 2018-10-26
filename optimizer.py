@@ -47,7 +47,7 @@ def LRR(X,Y,theta,learning_rate):
     c = np.sum((Yp-Y)**2)/m
     return {'cost':c,'theta':Th}
 
-    def data_generator(feature_size, data_size):
+def data_generator(feature_size, data_size):
     coef = np.random.random((1, feature_size))*10
     coef = np.around(coef, decimals=2)
     i = 0
